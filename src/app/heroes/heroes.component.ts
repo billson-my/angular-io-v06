@@ -17,7 +17,7 @@ export class HeroesComponent implements OnInit {
     name: 'Windstorm'
   }
 
-  heroes = Hero[];
+  heroes: Hero[];
 
   selectedHero: Hero;
   
