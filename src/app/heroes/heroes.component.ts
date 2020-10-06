@@ -3,6 +3,8 @@ import { Hero } from '../hero';
 
 import { HEROES } from "../mock-heroes"
 
+import { HeroService } from '../hero.service';
+
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -15,7 +17,7 @@ export class HeroesComponent implements OnInit {
     name: 'Windstorm'
   }
 
-  heroes = HEROES;
+  heroes = Hero[];
 
   selectedHero: Hero;
   
